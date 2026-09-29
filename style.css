@@ -6,25 +6,40 @@
 
 body {
     background: linear-gradient(45deg, rgb(82, 1, 1), black 30%);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    width:100vw;
 }
 
 #logo {
-    position: fixed;
-    display: flex;
-    align-items: center;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items:center;
+    width: 200px;
+    height: 100px;
+    
 
     img {
-        width: 150px;
-        height: 150px;
-        position: relative;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position:absolute;
+        width: 200px;
+        height: 200px;
+        bottom:20px;
+        right:45px
+        
     }
 
     h1 {
         color: white;
-        position: absolute;
-        left: 160px;
-        bottom: 80px;
-
+        
+        
+    
     }
 
 
@@ -34,8 +49,8 @@ body {
 #entrar {
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    height: 30vh;
+    width: 25vw;
+    height: 25vh;
     gap: 20px;
 
     img{
