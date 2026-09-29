@@ -7,39 +7,38 @@
 body {
     background: linear-gradient(45deg, rgb(82, 1, 1), black 30%);
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
-    align-items:center;
-    height:100vh;
-    width:100vw;
+    align-items: center;
+    min-height: 100vh;
+    overflow:hidden;
 }
 
 #logo {
     position: relative;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     width: 200px;
     height: 100px;
-    
+
 
     img {
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
-        position:absolute;
+        position: absolute;
         width: 200px;
         height: 200px;
-        bottom:20px;
-        right:45px
-        
+        bottom: 20px;
+        right: 45px
     }
 
     h1 {
         color: white;
-        
-        
-    
+
+
+
     }
 
 
@@ -49,11 +48,11 @@ body {
 #entrar {
     display: flex;
     flex-direction: column;
-    width: 25vw;
-    height: 25vh;
+    width: 30vw;
+    height: 30vh;
     gap: 20px;
 
-    img{
+    img {
         opacity: 0.5;
         transition: 1s;
     }
@@ -62,20 +61,60 @@ body {
         opacity: 1;
 
     }
-    
-}
-
-#centro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
-#fundo {
-    width: 600px;
-    height: 600px;
-    position: relative;
-    left: 1200px
-    
-}
+
+    }
+
+        @media(max-width:420px) {
+        #entrar {
+            display: flex;
+            flex-direction: column;
+            width: 70vw;
+            gap: 20px;
+
+            img {
+                opacity: 0.5;
+                transition: 1s;
+            }
+
+            img:hover {
+                opacity: 1;
+
+            }
+        }
+    }
+
+    @media (max-width: 200px){
+         #entrar {
+            display: flex;
+            flex-direction: column;
+            width: 90vw;
+            gap: 20px;
+
+            img {
+                opacity: 0.5;
+                transition: 1s;
+            }
+
+            img:hover {
+                opacity: 1;
+
+            }
+        }
+    }
+
+
+    #centro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #fundo {
+        width: 600px;
+        height: 600px;
+        position: relative;
+
+    }
